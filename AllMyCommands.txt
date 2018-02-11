@@ -1,0 +1,94 @@
+C:\Users\Ashmawy>cd desktop
+
+C:\Users\Ashmawy>git clone https://github.com/ashmawy1/myRepo.git
+
+C:\Users\Ashmawy>cd desktop/myRepo
+
+C:\Users\Ashmawy\Desktop\myRepo>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        first.txt
+        second.txt
+        third.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\Ashmawy\Desktop\myRepo>git add first.txt
+
+C:\Users\Ashmawy\Desktop\myRepo>git add second.txt
+
+C:\Users\Ashmawy\Desktop\myRepo>git add third.txt
+
+C:\Users\Ashmawy\Desktop\myRepo>git rm second.txt --cached
+rm 'second.txt'
+
+C:\Users\Ashmawy\Desktop\myRepo>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   first.txt
+        new file:   third.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        second.txt
+
+
+C:\Users\Ashmawy\Desktop\myRepo>git add second.txt
+
+C:\Users\Ashmawy\Desktop\myRepo>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   first.txt
+        new file:   second.txt
+        new file:   third.txt
+
+C:\Users\Ashmawy\Desktop\myRepo>  git config --global user.name "Mahmoud Ashmawy"
+
+C:\Users\Ashmawy\Desktop\myRepo> git config --global user.email "mahmoud.m.ebrahim@gmail.com"
+
+C:\Users\Ashmawy\Desktop\myRepo>git commit -m "Commited my changes from staging area"
+
+C:\Users\Ashmawy\Desktop\myRepo>git push
+
+C:\Users\Ashmawy\Desktop\myRepo>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files: README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\Ashmawy\Desktop\myRepo>git branch ReadMe
+
+C:\Users\Ashmawy\Desktop\myRepo>git checkout ReadMe
+Switched to branch 'ReadMe'
+
+C:\Users\Ashmawy\Desktop\myRepo>git init
+
+C:\Users\Ashmawy\Desktop\myRepo>git add README.md
+
+C:\Users\Ashmawy\Desktop\myRepo>git commit -m "Added the README.md file"
+
+C:\Users\Ashmawy\Desktop\myRepo>git push
+
+C:\Users\Ashmawy\Desktop\myRepo>git checkout master
+Switched to branch 'master'
+
+C:\Users\Ashmawy\Desktop\myRepo>git merge ReadMe master
+Already up to date.
